@@ -22,7 +22,8 @@ def index():
 
     logger.info("CPM:[{0}], Average CPM:[{1:9.3f}], uSV:[{2:9.3f}]".format(cpm, acpm, uSv))
     response = "OK.ERR0"
-    return response, 200
+    return redirect("http://www.gmcmap.com/log2.asp")
+#    return response, 200
   else:
     return "Invalid input", 400
 
